@@ -18,22 +18,15 @@
     </nav>
   </header>
 
-  
   <main>
     <section>
-      <h2>Bienvenido</h2>
-      <p>Este es el contenido informativo de la página principal.</p>
-    </section>
-
-    
-    <section>
       <h2>Reservación</h2>
-      <form>
+      <form id="formReserva">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
 
         <label for="contacto">Contacto:</label>
-        <input type="email" id="contacto" name="contacto" required>
+        <input type="text" id="contacto" name="contacto" required>
 
         <label for="fecha">Fecha:</label>
         <input type="date" id="fecha" name="fecha" required>
@@ -46,12 +39,16 @@
 
         <button type="submit">Reservar</button>
       </form>
+
+      <!-- Aquí se mostrarán los mensajes -->
+      <div id="mensaje"></div>
     </section>
   </main>
 
-  
   <footer>
     <p>&copy; 2026 Mi Sistema Web</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
