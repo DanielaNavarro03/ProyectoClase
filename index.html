@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto Final</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <header>
+    <h1>Mi Sistema Web</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Reservaciones</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <main>
+    <section>
+      <h2>Bienvenido</h2>
+      <p>Este es el contenido informativo de la página principal.</p>
+    </section>
+
+    
+    <section>
+      <h2>Reservación</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="contacto">Contacto:</label>
+        <input type="email" id="contacto" name="contacto" required>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="personas">Número de personas:</label>
+        <input type="number" id="personas" name="personas" min="1" required>
+
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios"></textarea>
+
+        <button type="submit">Reservar</button>
+      </form>
+    </section>
+  </main>
+
+  
+  <footer>
+    <p>&copy; 2026 Mi Sistema Web</p>
+  </footer>
+</body>
+</html>
